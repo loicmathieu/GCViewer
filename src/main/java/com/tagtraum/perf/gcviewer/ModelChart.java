@@ -8,71 +8,73 @@ package com.tagtraum.perf.gcviewer;
  * Time: 2:43:39 PM
  */
 public interface ModelChart {
-    void setScaleFactor(double scaleFactor);
+	void setScaleFactor(double scaleFactor);
 
-    double getScaleFactor();
+	double getScaleFactor();
 
-    boolean isShowGCTimesLine();
+	boolean isShowGCTimesLine();
 
-    void setShowGCTimesLine(boolean showGCTimesLine);
+	void setShowGCTimesLine(boolean showGCTimesLine);
 
-    boolean isShowGCTimesRectangles();
+	boolean isShowGCTimesRectangles();
 
-    void setShowGCTimesRectangles(boolean showGCTimesRectangles);
+	void setShowGCTimesRectangles(boolean showGCTimesRectangles);
 
-    boolean isShowFullGCLines();
+	boolean isShowFullGCLines();
 
-    void setShowFullGCLines(boolean showFullGCLines);
+	void setShowFullGCLines(boolean showFullGCLines);
 
-    boolean isShowIncGCLines();
+	boolean isShowIncGCLines();
 
-    void setShowIncGCLines(boolean showIncGCLines);
+	void setShowIncGCLines(boolean showIncGCLines);
 
-    boolean isShowTotalMemoryLine();
+	boolean isShowTotalMemoryLine();
 
-    void setShowTotalMemoryLine(boolean showTotalMemoryLine);
+	void setShowTotalMemoryLine(boolean showTotalMemoryLine);
 
-    boolean isShowUsedMemoryLine();
+	boolean isShowUsedMemoryLine();
 
-    void setShowUsedMemoryLine(boolean showUsedMemoryLine);
+	void setShowUsedMemoryLine(boolean showUsedMemoryLine);
 
-    boolean isShowUsedYoungMemoryLine();
+	boolean isShowUsedYoungMemoryLine();
 
-    void setShowUsedYoungMemoryLine(boolean showUsedYoungMemoryLine);
+	void setShowUsedYoungMemoryLine(boolean showUsedYoungMemoryLine);
 
-    boolean isShowUsedTenuredMemoryLine();
+	boolean isShowUsedTenuredMemoryLine();
 
-    void setShowUsedTenuredMemoryLine(boolean showUsedTenuredMemoryLine);
+	void setShowUsedTenuredMemoryLine(boolean showUsedTenuredMemoryLine);
 
-    void setShowTenured(boolean showTenured);
+	void setShowTenured(boolean showTenured);
 
-    boolean isShowTenured();
+	boolean isShowTenured();
 
-    void setShowYoung(boolean showYoung);
+	void setShowYoung(boolean showYoung);
 
-    boolean isShowYoung();
-    
-    void setShowInitialMarkLevel(boolean showInitialMarkLevel);
-    
-    boolean isShowInitialMarkLevel();
-    
-    void setShowConcurrentCollectionBeginEnd(boolean showConcurrentCollectionBeginEnd);
-    
-    boolean isShowConcurrentCollectionBeginEnd();
+	boolean isShowYoung();
 
-    void setRunningTime(double runningTime);
+	void setShowInitialMarkLevel(boolean showInitialMarkLevel);
 
-    void setFootprint(long footPrint);
+	boolean isShowInitialMarkLevel();
 
-    void setMaxPause(double maxPause);
+	void setShowConcurrentCollectionBeginEnd(boolean showConcurrentCollectionBeginEnd);
 
-    long getFootprint();
+	boolean isShowConcurrentCollectionBeginEnd();
 
-    double getMaxPause();
+	void setRunningTime(double runningTime);
 
-    boolean isAntiAlias();
+	void setFootprint(long footPrint);
 
-    void setAntiAlias(boolean antiAlias);
-    
-    void resetPolygonCache();
+	void setMaxPause(double maxPause);
+
+	long getFootprint();
+
+	double getMaxPause();
+
+	boolean isAntiAlias();
+
+	void setAntiAlias(boolean antiAlias);
+
+	void resetPolygonCache();
+
+	void autoSetScaleFactor();
 }
